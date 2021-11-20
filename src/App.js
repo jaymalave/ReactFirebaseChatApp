@@ -4,7 +4,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
 import env from "react-dotenv";
-
+import SignIn from './components/SignIn/SignIn';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
@@ -18,15 +18,17 @@ firebase.initializeApp({
   measurementId: "G-4BVK1YMPFW"
 });
 
-const auth = firebase.auth();
 const firestore = firebase.firestore();
+const auth = firebase.auth();
 
 function App() {
 
   const [user] = useAuthState(auth);
+
   return (
     <div className="App">
       <h1 className="text-center fw-bold">React firebase chat app</h1>
+      {user ? <h1>User is logged in </h1> : <SignIn/>}
     </div>
   );
 }
