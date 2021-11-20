@@ -8,6 +8,7 @@ import SignIn from './components/SignIn/SignIn';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import SignOut from "./components/SignOut/SignOut";
+import ChatRoom from "./components/ChatRoom/ChatRoom";
 
 firebase.initializeApp({
   apiKey: process.env.REACT_APP_API_KEY,
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="text-center fw-bold">React firebase chat app</h1>
-      {user ? <SignOut/> : <SignIn/>}
+      {user ? <ChatRoom/> : <SignIn/>}
       {console.log(user)}
     </div>
   );
