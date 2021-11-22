@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import firebase from "firebase/compat/app";
+import { onAuthStateChanged } from "firebase/compat/auth";
 
 const SendMessage = () => {
   const [formValue, setFormValue] = useState("");
@@ -9,13 +10,17 @@ const SendMessage = () => {
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    const { uid, photoUrl } = auth.currentUser;
+    //  const { uid, photoUrl, userName } = auth.currentUser;
+    const uid = auth.currentUser.uid;
+    const username = auth.currentUser.displayName;
+    const photourl = auth.currentUser.photoURL;
 
     await messagesRef.add({
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
-      photoUrl,
+      photourl,
+      username,
     });
     setFormValue("");
   };
