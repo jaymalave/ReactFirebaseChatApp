@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center fw-bold">React firebase chat app</h1>
+      <h1 className="text-center fw-bold fs-1">React firebase chat app</h1>
       {user ? (
         <>
           <ChatRoom />

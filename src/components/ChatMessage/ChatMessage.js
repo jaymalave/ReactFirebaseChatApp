@@ -9,9 +9,11 @@ const ChatMessage = (props) => {
 
   return (
     <>
-      <div className={`message ${isSentOrGot}`}>
-        <img src={photourl} />
+      <div className="flex flex-col">
+        <div className="flex flex-row">
+        <img src={photourl} className="rounded-full w-10 h-10"/>
         <h1>{username}</h1>
+        </div>
         <p>{text}</p>
       </div>
     </>
