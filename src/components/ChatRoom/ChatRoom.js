@@ -16,7 +16,9 @@ const ChatRoom = () => {
     <>
       {messages &&
         messages.map((message) => (
-          <ChatMessage key={message.id} message={message} />
+          <div>
+            <ChatMessage key={message.id} message={message} />
+          </div>
         ))}
         <SendMessage/>
         <SignOut/>

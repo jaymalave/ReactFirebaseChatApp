@@ -25,19 +25,24 @@ const SendMessage = () => {
     setFormValue("");
   };
   return (
-    <>
+    <div className="flex justify-center">
       <form onSubmit={sendMessage}>
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
           placeholder="Type your message"
+          className="w-70 h-10 px-1 m-2 rounded-half hover:border-none"
         />
 
-        <button type="submit" disabled={!formValue}>
-          Send
+        <button
+          type="submit"
+          disabled={!formValue}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-half"
+        >
+          Shoot!
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

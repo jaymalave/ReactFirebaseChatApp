@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import {onAuthStateChanged} from "firebase/compat/auth";
+import { onAuthStateChanged } from "firebase/compat/auth";
 import env from "react-dotenv";
 import SignIn from "./components/SignIn/SignIn";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -28,7 +28,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center fw-bold fs-1">React firebase chat app</h1>
+      <h1 className="d-flex justify-center fw-bold text-7xl align-items-center m-1 text-center">
+        Discord, but not better.
+      </h1>
       {user ? (
         <>
           <ChatRoom />

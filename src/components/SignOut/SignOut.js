@@ -1,12 +1,20 @@
 import React from "react";
 import firebase from "firebase/compat/app";
 
-
 const SignOut = () => {
   const auth = firebase.auth();
 
   return (
-    auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>
+    auth.currentUser && (
+      <div className="flex justify-center">
+        <button
+          onClick={() => auth.signOut()}
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 my-5"
+        >
+          Sign Out
+        </button>
+      </div>
+    )
   );
 };
 
