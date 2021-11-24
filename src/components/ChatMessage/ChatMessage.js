@@ -4,7 +4,7 @@ import firebase from "firebase/compat/app";
 const ChatMessage = (props) => {
   const auth = firebase.auth();
   //destructuring
-  const { text, uid, photourl, username } = props.message;
+  const { text, uid, photourl, username, createdAt } = props.message;
   const isSentOrGot = uid === auth.currentUser.uid ? "sent" : "recieved";
 
   return (
@@ -15,6 +15,7 @@ const ChatMessage = (props) => {
         </div> */}
         <div>
           <div className="text-xl font-medium text-black">{username}</div>
+          {/* <div className="text-md font-medium text-gray">{createdAt}</div> */}
           <hr className="w-80"/>
           <p className="text-gray-500">{text}</p>
         </div>
