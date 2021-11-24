@@ -27,9 +27,9 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
-      <h1 className="d-flex justify-center fw-bold text-7xl align-items-center m-1 text-center">
-        Stack overflow, seriously.
+    <div className="App d-flex flex-col align-items-center justify-content-center">
+      <h1 className="d-flex justify-center fw-bold text-5xl align-items-center m-1 text-center my-5">
+        Stack underflow, seriously.
       </h1>
       {user ? (
         <>
