@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="d-flex justify-center fw-bold text-7xl align-items-center m-1 text-center">
-        Discord, but not better.
+        Stack overflow, seriously.
       </h1>
       {user ? (
         <>
