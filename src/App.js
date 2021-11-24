@@ -9,16 +9,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import SignOut from "./components/SignOut/SignOut";
 import ChatRoom from "./components/ChatRoom/ChatRoom";
+import {firebaseconfig} from './firebase.config.js' 
 
-firebase.initializeApp({
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: "chatapp-b7f91.firebaseapp.com",
-  projectId: "chatapp-b7f91",
-  storageBucket: "chatapp-b7f91.appspot.com",
-  messagingSenderId: "66615626930",
-  appId: "1:66615626930:web:226cc1225eb6e5ccdc0dab",
-  measurementId: "G-4BVK1YMPFW",
-});
+
+firebase.initializeApp(firebaseconfig);
 
 const firestore = firebase.firestore();
 const auth = firebase.auth();
