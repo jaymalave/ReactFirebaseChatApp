@@ -14,7 +14,7 @@ import ChatRoom from "./components/ChatRoom/ChatRoom";
 
 firebase.initializeApp({
   apiKey: "AIzaSyByN-pqavd0kRqfNFkhGdVW7gHrs3wF22U",
-  // authDomain: "https://discuss.hackexchange.in/",
+  authDomain: "chatapp-b7f91.firebaseapp.com",
   projectId: "chatapp-b7f91",
   storageBucket: "chatapp-b7f91.appspot.com",
   messagingSenderId: "66615626930",
