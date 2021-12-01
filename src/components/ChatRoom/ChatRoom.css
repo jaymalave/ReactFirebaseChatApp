@@ -12,10 +12,18 @@
 .message-container {
     display: flex;
     align-items: center;
+    
 }
 
 .sent {
     align-self: flex-end;
 }
+
+@media only screen and (max-width: 768px){
+    .message-container, .sent{
+        width: 75vw;
+    }
+}
+
 
 
