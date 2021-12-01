@@ -20,7 +20,7 @@ const ChatRoom = () => {
   });
 
   return (
-    <>
+    <div className="chat-container bg-titleColor rounded-lg">
       {messages &&
         messages.map((message) => (
           <div>
@@ -30,7 +30,7 @@ const ChatRoom = () => {
       <span ref={dummy}></span>
       <SendMessage />
       <SignOut />
-    </>
+    </div>
   );
 };
 

@@ -14,7 +14,7 @@ const SignIn = () => {
     <div className="flex justify-center my-10">
       <button
         onClick={signInWithGoogle}
-        className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-1 px-2 my-5"
+        className="bg-signInColor hover:bg-signInColor text-white font-bold py-1 px-2 my-5"
       >
         <div className="flex justify-between items-center m-2">
           <img src="/google.png" className="w-5 h-5 m-1"/>

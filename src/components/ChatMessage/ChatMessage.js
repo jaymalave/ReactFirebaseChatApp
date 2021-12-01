@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "firebase/compat/app";
 
+
 const ChatMessage = (props) => {
   const auth = firebase.auth();
   //destructuring
