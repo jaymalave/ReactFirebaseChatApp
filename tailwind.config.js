@@ -1,19 +1,24 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: false,
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundOpacity: {
+        50: "0.1",
+      },
+    },
     colors: {
-      backgroundColor: '#1F2937',
-      titleColor: '#F87171',
-      signInColor: '#2563EB',
-      signOutColor: '#EF4444',
+      wallColor: "#6B7280",
+      backgroundColor: "#1F2937",
+      titleColor: "#F87171",
+      signInColor: "#2563EB",
+      signOutColor: "#EF4444",
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

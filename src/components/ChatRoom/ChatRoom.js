@@ -21,8 +21,8 @@ const ChatRoom = () => {
   });
 
   return (
-    <>
-    <div className="chat-container bg-titleColor">
+    <div className="">
+    <div className="chat-container bg-wallColor bg-opacity-20">
       {messages &&
         messages.map((message) => (
           <div className={message.uid === auth.currentUser.uid ? "message-container sent" : "message-container recieved"}>
@@ -34,7 +34,7 @@ const ChatRoom = () => {
     </div>
     <SendMessage />
       <SignOut />
-      </>
+      </div>
   );
 };
 

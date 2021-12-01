@@ -25,7 +25,7 @@ const SendMessage = () => {
     setFormValue("");
   };
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-around w-100">
       <form onSubmit={sendMessage}>
         <input
           value={formValue}
