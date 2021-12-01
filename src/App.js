@@ -30,7 +30,10 @@ function App() {
 
   return (
     <div className="App d-flex flex-col align-items-center justify-content-center">
-      <h1 className="d-flex justify-center fw-bold text-5xl align-items-center m-1 text-center my-5">
+      <h1 className="d-flex justify-center fw-bold text-5xl align-items-center m-1 text-center mt-5 text-titleColor">
+        Hack Exchange Developers Forum
+      </h1>
+      <h1 className="d-flex justify-center fw-bold text-2xl align-items-center m-1 text-center mb-5 text-titleColor">
         Stack underflow, seriously.
       </h1>
       {user ? (

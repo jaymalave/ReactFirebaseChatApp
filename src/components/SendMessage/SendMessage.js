@@ -25,7 +25,7 @@ const SendMessage = () => {
     setFormValue("");
   };
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-around w-100">
       <form onSubmit={sendMessage}>
         <input
           value={formValue}
@@ -37,7 +37,7 @@ const SendMessage = () => {
         <button
           type="submit"
           disabled={!formValue}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-half"
+          className="bg-titleColor hover:bg-titleColor text-white font-bold py-1 px-2 rounded-half"
         >
           Shoot!
         </button>

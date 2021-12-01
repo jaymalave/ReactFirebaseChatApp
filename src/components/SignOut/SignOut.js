@@ -9,7 +9,7 @@ const SignOut = () => {
       <div className="flex justify-center">
         <button
           onClick={() => auth.signOut()}
-          className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 my-5"
+          className="bg-signOutColor hover:bg-signOutColor text-white font-bold py-1 px-2 my-2"
         >
           Sign Out
         </button>
