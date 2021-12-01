@@ -1,4 +1,21 @@
-/* .chat-container {
+.chat-container {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90vw;
+    height: 65vh;
+    border-radius: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
-} */
+.message-container {
+    display: flex;
+    align-items: center;
+}
+
+.sent {
+    align-self: flex-end;
+}
+
+
