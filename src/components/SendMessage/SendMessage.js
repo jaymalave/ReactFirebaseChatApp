@@ -16,7 +16,7 @@ const SendMessage = () => {
     const photourl = auth.currentUser.photoURL;
 
     await messagesRef.add({
-      text: formValue,
+      text: "Shoot!",
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photourl,
@@ -39,7 +39,6 @@ const SendMessage = () => {
           disabled={!formValue}
           className="bg-titleColor hover:bg-titleColor text-white font-bold py-1 px-2 rounded-half"
         >
-          Shoot!
         </button>
       </form>
     </div>
